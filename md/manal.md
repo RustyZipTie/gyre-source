@@ -1,5 +1,6 @@
 # Gyre manual
-<img src="../source/img/lock_hollow_big_final.png" height="300px">  
+<img src="../img/pretty/main-demo.png" height="300px">  
+
 ## Welcome to the world of Gyre!
 > In reality, this is less of a complete manual than a compilation of tips and tricks that I have stumbled upon
 in the process of designing and testing the system. I intend to continually update it as I learn more, and I
@@ -18,7 +19,8 @@ way to print or assemble Gyre- whatever works for you is what you should do.
 [Mounting](#mounting)
 
 ## Planning
-<img src="../source/img/dwg.png" height="200px">
+<img src="../img/pretty/dwg.png" height="200px">
+
 >Note: all measurements are in inches unless stated otherwise.
 
 Currently, there are two basic layouts: linear and hex.
