@@ -10,6 +10,8 @@ way to print or assemble Gyre- whatever works for you is what you should do.
 > Have fun!
 
 ## Contents
+[The Basics](#the-basics)
+
 [Planning](#planning)
 
 [Printing](#printing)
@@ -18,6 +20,8 @@ way to print or assemble Gyre- whatever works for you is what you should do.
 
 [Mounting](#mounting)
 
+## The Basics
+
 ## Planning
 <img src="../img/pretty/dwg.png" height="200px">
 
@@ -25,13 +29,13 @@ way to print or assemble Gyre- whatever works for you is what you should do.
 
 Currently, there are two basic layouts: linear and hex.
 
-<img src="../source/img/linear_layout.png" height="30px">
+<img src="../img/info/linear_layout.png" height="30px">
 
-<img src="../source/img/hex_layout.png" height="200px">
+<img src="../img/info/hex_layout.png" height="200px">
 
 I recommend sticking with one of these, especially if you are just starting out with Gyre.
-Once you get the "feel" of the system, you will almost certainly think of new ways to use it (see the pictures at the end of this section).
-If you find a cool new layout, I would love to hear about it in the [feedback form]() or [thingiverse comments]().
+Once you get the "feel" of the system, you will almost certainly think of new ways to use it.
+If you find a cool new layout, I would love to hear about it in the [feedback form]() or [thingiverse comments](https://www.thingiverse.com/thing:6913421/comments).
 
 In my opinion, the best way to design your layout is as follows:
 - Start with a rough idea of what you want
@@ -59,16 +63,12 @@ For instance, if you are using 8-slot rails, and you have 5 of them, the length 
 
 #### Hex
 
-There is a little more variability when it comes to hexagonal layouts. You can, of course, make all the sides  
-equal, like this:  
-%%pictures  
+There is a little more variability when it comes to hexagonal layouts. You can, of course, make all the sides equal, like this:  
+<img src="../img/info/hex_uniform.png" height="150px">  
 However, you may prefer to use different lengths of rails for the horizontal and diagonal sides, like this:  
-%%pictures  
-or this:  
-%%pictures  
+<img src="../img/info/hex_layout.png" height="150px">  
 If your imagination is bigger than your print bed, you can even use two or more rails per side, using linear  
-joints.  
-%%pictures  
+joints.   
 The formulas below should work as long as all of the diagonal sides are the same length, and all of the
 horizontal sides are the same length. They also assume that you are using 120° joints all around the outside (rather than tri joints).
 
@@ -82,18 +82,22 @@ horizontal sides are the same length. They also assume that you are using 120° 
 |Nh|number of horizontal rails|
 > Note- Nd and Nh refer to the number of rails in a given row or column. 
 For instance, in the layout below, Nh = 3 (purple) and Nw = 3 (green)
+><img src="../img/info/h-w_final.png" height="150px">
 
-><img src="../source/img/h-w_final.png" height="150px">
 
-**W = ((Lh + 1) \* Nh) + (0.5 \* (Ld + 1) \* (Nh + 1)) + 0.95**
 
-**H = ((Ld + 1) \* Nd \* 0.87) + 1.25**  
+$$W = ((Lh + 1) * Nh) + (0.5 * (Ld + 1) * (Nh + 1)) + 0.95$$
 
-#### Other layouts
-%%pictures
+$$H = ((Ld + 1) * Nd * 0.87) + 1.25$$
+
+#### A vs B
+**In the hex layout, some parts, such as tri/120° joints and the larger drawer attachments
+have A and B variants. In these cases, A is used in the lower right, upper right, 
+and middle left, while B is used in the upper left, lower left, and middle right. 
+It is important to pay attention to this.**
 
 ## Printing
-<img src="../source/img/sliced.png" height="200px">
+<img src="../img/pretty/sliced.png" height="200px">
 
 There is nothing special about printing Gyre parts- default settings should be just fine most of the time.
 
@@ -109,4 +113,6 @@ Feel free to experiment with other materials. I'd love to hear what your results
 
 ## Assembling
 
+
 ## Mounting
+
