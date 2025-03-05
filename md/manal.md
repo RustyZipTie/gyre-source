@@ -10,7 +10,7 @@ way to print or assemble Gyre- whatever works for you is what you should do.
 > Have fun!
 
 ## Contents
-[The Basics](#the-basics)
+[Definitions](#definitions)
 
 [Planning](#planning)
 
@@ -20,7 +20,15 @@ way to print or assemble Gyre- whatever works for you is what you should do.
 
 [Mounting](#mounting)
 
-## The Basics
+## Definitions  
+||||
+|:---:|:---:|:---:|
+| Rails | Basic building blocks | ![rail](../img/info/definitions/rail_def.png) |
+| Locks | They lock into rails. Basis of most attachments as well as all joints | ![lock](../img/info/definitions/lock_def.png) |
+| Joints | Made of several locks. They hold multiple rails together. | ![joint](../img/info/definitions/joint_def.png) | 
+| Holes | Holes in the rails where locks are inserted | ![hole](../img/info/definitions/hole_def.png) | 
+| Keys | Pyramid-shaped features on locks that allow them to lock into rails. | ![key](../img/info/definitions/key_def.png) |
+| Keyways | Channels in holes that fit keys | ![keyway](../img/info/definitions/keyway_def.png) | 
 
 ## Planning
 <img src="../img/pretty/dwg.png" height="200px">
@@ -35,7 +43,7 @@ Currently, there are two basic layouts: linear and hex.
 
 I recommend sticking with one of these, especially if you are just starting out with Gyre.
 Once you get the "feel" of the system, you will almost certainly think of new ways to use it.
-If you find a cool new layout, I would love to hear about it in the [feedback form]() or [thingiverse comments](https://www.thingiverse.com/thing:6913421/comments).
+If you come up with a cool new layout, I would love to hear about it in the [feedback form]() or [thingiverse comments](https://www.thingiverse.com/thing:6913421/comments).
 
 In my opinion, the best way to design your layout is as follows:
 - Start with a rough idea of what you want
@@ -67,8 +75,7 @@ There is a little more variability when it comes to hexagonal layouts. You can, 
 <img src="../img/info/hex_uniform.png" height="150px">  
 However, you may prefer to use different lengths of rails for the horizontal and diagonal sides, like this:  
 <img src="../img/info/hex_layout.png" height="150px">  
-If your imagination is bigger than your print bed, you can even use two or more rails per side, using linear  
-joints.   
+If your imagination is bigger than your print bed, you can even use two or more rails per side, using linear joints.   
 The formulas below should work as long as all of the diagonal sides are the same length, and all of the
 horizontal sides are the same length. They also assume that you are using 120° joints all around the outside (rather than tri joints).
 
@@ -80,21 +87,28 @@ horizontal sides are the same length. They also assume that you are using 120° 
 |Lv|length of vertical rails|
 |Nd|number of diagonal rails|
 |Nh|number of horizontal rails|
-> Note- Nd and Nh refer to the number of rails in a given row or column. 
-For instance, in the layout below, Nh = 3 (purple) and Nw = 3 (green)
-><img src="../img/info/h-w_final.png" height="150px">
+<!-- > Note- Nd and Nh refer to the number of rails in a given row or column. 
+For instance, in the layout below, Nh = 3 (purple) and Nw = 3 (green) -->
+>
 
 
 
 $$W = ((Lh + 1) * Nh) + (0.5 * (Ld + 1) * (Nh + 1)) + 0.95$$
 
-$$H = ((Ld + 1) * Nd * 0.87) + 1.25$$
+$$H = ((Ld + 1) * Nd * 0.87) + 1.25$$ 
+<br/>
+<img src="../img/info/h-w_final.png" height="150px">
+
+In this example, the number of diagonal rails (purple) is 3, and the length of the diagonal rails is 6. The number of horizontal rails (green) is 3 and the length of the horizontal rails is 8. Therefore:
+$$W = ((8 + 1) * 3) + (0.5 * (6 + 1) * (3 + 1)) + 0.95 = 41.95"$$
+$$H = ((6 + 1) * 3 * 0.87) + 1.25 = 19.52"$$
 
 #### A vs B
-**In the hex layout, some parts, such as tri/120° joints and the larger drawer attachments
+<img src="../img/info/a_vs_b.png" height="250px"><br/>
+_**In the hex layout, some parts, such as tri/120° joints and the larger drawer attachments
 have A and B variants. In these cases, A is used in the lower right, upper right, 
 and middle left, while B is used in the upper left, lower left, and middle right. 
-It is important to pay attention to this.**
+It is important to pay attention to this.**_
 
 ## Printing
 <img src="../img/pretty/sliced.png" height="200px">
@@ -112,7 +126,7 @@ Feel free to experiment with other materials. I'd love to hear what your results
 - Always use common sense!
 
 ## Assembling
-
+- Orientation: the holes are triangular 
 
 ## Mounting
 
