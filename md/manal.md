@@ -43,7 +43,7 @@ Currently, there are two basic layouts: linear and hex.
 
 I recommend sticking with one of these, especially if you are just starting out with Gyre.
 Once you get the "feel" of the system, you will almost certainly think of new ways to use it.
-If you come up with a cool new layout, I would love to hear about it in the [feedback form]() or [thingiverse comments](https://www.thingiverse.com/thing:6913421/comments).
+<!-- If you come up with a cool new layout, I would love to hear about it in the [feedback form]() or [thingiverse comments](https://www.thingiverse.com/thing:6913421/comments). -->
 
 In my opinion, the best way to design your layout is as follows:
 - Start with a rough idea of what you want
@@ -52,8 +52,14 @@ In my opinion, the best way to design your layout is as follows:
 - Looking at them, form a guesstimate of how many more pieces you need
 - Repeat as necessary
 
-However, for those of you that need or want to be more precise, here are some tips and formulas to plan your
-Gyre layout ahead of time:
+#### IMPORTANT NOTE FOR HEX LAYOUT: A vs B
+<img src="../img/info/a_vs_b.png" height="250px"><br/>
+_**In the hex layout, some parts, such as tri/120° joints and the larger drawer attachments
+have A and B variants. In these cases, A is used in the lower right, upper right, 
+and middle left, while B is used in the upper left, lower left, and middle right. 
+It is important to pay attention to this.**_
+
+For those of you that need or want to be somewhat precise in designing your layout, here are some tips and formulas to plan your Gyre layout ahead of time:
 
 #### Linear
 Linear layout forms a single horizontal line. Rails can be any length, and they are connected by linear joints.
@@ -103,12 +109,6 @@ In this example, the number of diagonal rails (purple) is 3, and the length of t
 $$W = ((8 + 1) * 3) + (0.5 * (6 + 1) * (3 + 1)) + 0.95 = 41.95"$$
 $$H = ((6 + 1) * 3 * 0.87) + 1.25 = 19.52"$$
 
-#### A vs B
-<img src="../img/info/a_vs_b.png" height="250px"><br/>
-_**In the hex layout, some parts, such as tri/120° joints and the larger drawer attachments
-have A and B variants. In these cases, A is used in the lower right, upper right, 
-and middle left, while B is used in the upper left, lower left, and middle right. 
-It is important to pay attention to this.**_
 
 ## Printing
 <img src="../img/pretty/sliced.png" height="200px">
@@ -126,7 +126,46 @@ Feel free to experiment with other materials. I'd love to hear what your results
 - Always use common sense!
 
 ## Assembling
-- Orientation: the holes are triangular 
+### Orientation
+Rail orientation: The holes are triangular (sort of). This "triangle" should always be upright, not upside down or sideways. Examples:  
+<img src="../img/info/orientation/orientation_1.png" height="100px"> 
+<img src="../img/info/orientation/orientation_2.png" height="100px"> 
+<img src="../img/info/orientation/orientation_3.png" height="100px"> 
+<img src="../img/info/orientation/orientation_4.png" height="100px">
+
+
+Lock and joint orientation: The keys also form a triangular shape. When inserting a lock or joint into a rail, the triangle should be upright to match the hole, but once it is locked in place, it should be upside down. Examples:  
+<img src="../img/info/orientation/orientation_5.png" height="150px">
+<img src="../img/info/orientation/orientation_6.png" height="150px">
+
+### The assembly process
+> For linear layout, follow the first four steps below, but with a linear joint instead of a triple joint. Repeat as necessary. 
+- Orient a joint A and a rail as shown  
+<img src="../img/info/assembly/step_1.png" height="200px">  
+- Rotate the joint 60° counterclockwise  
+<img src="../img/info/assembly/step_2.png" height="200px"> 
+- Insert joint into rail  
+<img src="../img/info/assembly/step_3.png" height="200px">  
+- Rotate the joint back to its original position  
+<img src="../img/info/assembly/step_4.png" height="200px">  
+- Repeat the process until you have the following pieces:
+    - joint A + rail + joint B + rail + joint A
+    - joint B + rail + joint A + rail + joint B
+    - 2x extra rails  
+<img src="../img/info/assembly/step_5.png" height="200px">  
+- Lay out the pieces as shown:  
+<img src="../img/info/assembly/step_6.png" height="200px">  
+- Slide the extra rails onto the joints, as shown:  
+<img src="../img/info/assembly/step_7.png" height="200px">  
+- Rotate the whole thing so that it becomes a hexagon  
+<img src="../img/info/assembly/step_8.png" height="200px"> 
+- Repeat as necessary, adding on to what has already been built, until it is as large as you want it   
+<img src="../img/info/assembly/step_9.png" height="200px">  
 
 ## Mounting
+All joints have holes in the center to accommodate screws. They are designed for basic wood screws with flat heads, but most types of screws will work fine.  
+Additionally, there is a special type of lock called a mounting lock that has a screw hole and is the right size for mounting. It can be helpful at the ends of linear layouts, or any place where the end of a rail is just "hanging out in space."
 
+How many mounting point you use is up to your discretion. I would recommend starting with fewer, then CAUTIOUSLY testing the setup, and adding more as needed.
+
+It is possible to plan your layout such that all mounting points fall on the studs in your wall, but it is rather difficult. Instead, I recommend that you use some type of drywall anchor. Driving screws directly into the drywall will NOT provide enough support.
